@@ -1,7 +1,6 @@
 import firebase_admin
 from firebase_admin import credentials
 from firebase_admin import db
-from PyQt5.QtWidgets import QMessageBox
 
 class Tulpar_Firebase():
     def __init__(self):

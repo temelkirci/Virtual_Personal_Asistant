@@ -33,7 +33,7 @@
      <enum>QTabWidget::Rounded</enum>
     </property>
     <property name="currentIndex">
-     <number>8</number>
+     <number>11</number>
     </property>
     <widget class="QWidget" name="TEMEL">
      <attribute name="title">
@@ -43,6 +43,11 @@
     <widget class="QWidget" name="tab_3">
      <attribute name="title">
       <string>Book</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="tab_11">
+     <attribute name="title">
+      <string>PUA</string>
      </attribute>
     </widget>
     <widget class="QWidget" name="tab_4">
@@ -74,26 +79,13 @@
      <attribute name="title">
       <string>Search</string>
      </attribute>
-     <widget class="QLabel" name="label_3">
-      <property name="geometry">
-       <rect>
-        <x>590</x>
-        <y>30</y>
-        <width>771</width>
-        <height>311</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string/>
-      </property>
-     </widget>
      <widget class="QGroupBox" name="groupBox">
       <property name="geometry">
        <rect>
         <x>10</x>
         <y>20</y>
-        <width>561</width>
-        <height>331</height>
+        <width>1131</width>
+        <height>351</height>
        </rect>
       </property>
       <property name="title">
@@ -199,6 +191,263 @@
         </rect>
        </property>
       </widget>
+      <widget class="QLabel" name="label_12">
+       <property name="geometry">
+        <rect>
+         <x>270</x>
+         <y>300</y>
+         <width>101</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Downloaded</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="downloaded_label">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>300</y>
+         <width>41</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>560</x>
+         <y>10</y>
+         <width>551</width>
+         <height>301</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_2">
+       <property name="geometry">
+        <rect>
+         <x>850</x>
+         <y>320</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Next</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_3">
+       <property name="geometry">
+        <rect>
+         <x>740</x>
+         <y>320</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Back</string>
+       </property>
+      </widget>
+     </widget>
+     <widget class="QGroupBox" name="groupBox_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>400</y>
+        <width>1131</width>
+        <height>351</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string>Youtube</string>
+      </property>
+      <widget class="QLineEdit" name="image_textbox_2">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>110</y>
+         <width>241</width>
+         <height>21</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_13">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>110</y>
+         <width>101</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Keywords</string>
+       </property>
+      </widget>
+      <widget class="QComboBox" name="picture_size_2">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>170</y>
+         <width>91</width>
+         <height>22</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_14">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>170</y>
+         <width>101</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Min Size (KB)</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="search_youtube_video_button">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>200</y>
+         <width>121</width>
+         <height>61</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Search</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_15">
+       <property name="geometry">
+        <rect>
+         <x>80</x>
+         <y>140</y>
+         <width>101</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Number</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="download_number_2">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>140</y>
+         <width>91</width>
+         <height>21</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_16">
+       <property name="geometry">
+        <rect>
+         <x>270</x>
+         <y>300</y>
+         <width>101</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string>Downloaded</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="downloaded_label_2">
+       <property name="geometry">
+        <rect>
+         <x>220</x>
+         <y>300</y>
+         <width>41</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_4">
+       <property name="geometry">
+        <rect>
+         <x>850</x>
+         <y>320</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Next</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton_5">
+       <property name="geometry">
+        <rect>
+         <x>740</x>
+         <y>320</y>
+         <width>75</width>
+         <height>23</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>Back</string>
+       </property>
+      </widget>
      </widget>
     </widget>
     <widget class="QWidget" name="tab_10">
@@ -210,7 +459,7 @@
        <rect>
         <x>10</x>
         <y>20</y>
-        <width>411</width>
+        <width>401</width>
         <height>331</height>
        </rect>
       </property>
@@ -447,7 +696,7 @@
        </rect>
       </property>
       <property name="text">
-       <string>Add to Firebase</string>
+       <string>Add to Database</string>
       </property>
      </widget>
      <widget class="QLabel" name="label">
@@ -518,6 +767,92 @@
        <font>
         <pointsize>12</pointsize>
        </font>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="tableWidget">
+      <property name="geometry">
+       <rect>
+        <x>35</x>
+        <y>380</y>
+        <width>1201</width>
+        <height>441</height>
+       </rect>
+      </property>
+      <property name="editTriggers">
+       <set>QAbstractItemView::NoEditTriggers</set>
+      </property>
+      <attribute name="horizontalHeaderVisible">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="horizontalHeaderDefaultSectionSize">
+       <number>600</number>
+      </attribute>
+      <attribute name="horizontalHeaderMinimumSectionSize">
+       <number>39</number>
+      </attribute>
+      <attribute name="horizontalHeaderStretchLastSection">
+       <bool>true</bool>
+      </attribute>
+      <attribute name="verticalHeaderVisible">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="verticalHeaderCascadingSectionResizes">
+       <bool>true</bool>
+      </attribute>
+      <attribute name="verticalHeaderDefaultSectionSize">
+       <number>30</number>
+      </attribute>
+      <attribute name="verticalHeaderMinimumSectionSize">
+       <number>23</number>
+      </attribute>
+      <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+       <bool>true</bool>
+      </attribute>
+      <attribute name="verticalHeaderStretchLastSection">
+       <bool>true</bool>
+      </attribute>
+      <column>
+       <property name="text">
+        <string>Turkish</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>English</string>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>12</pointsize>
+         <weight>75</weight>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="textAlignment">
+        <set>AlignCenter</set>
+       </property>
+      </column>
+     </widget>
+     <widget class="QPushButton" name="showAllButton">
+      <property name="geometry">
+       <rect>
+        <x>600</x>
+        <y>832</y>
+        <width>101</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Show all</string>
       </property>
      </widget>
     </widget>

@@ -1,8 +1,5 @@
-import sys
 from PyQt5.QtCore import *
 from PyQt5.QtWebEngineWidgets import *
-from PyQt5.QtWidgets import QApplication
-from google_images_download import google_images_download
 
 class Tulpar_Web():
     def __init__(self, page):

@@ -1,57 +1,25 @@
-#!/usr/bin/python
-# -*- coding: utf-8 -*-
-import requests
-import urllib.request
-import urllib.parse
-import urllib.error
-from bs4 import BeautifulSoup
-import ssl
-import json
+from time import sleep
+from selenium import webdriver
 
+browser = webdriver.Firefox()
+browser.implicitly_wait(5)
 
-class Tulpar_Instagram():
+browser.get('https://www.instagram.com/')
 
-    def __init__(self, main_gui):
-        self.ctx = ssl.create_default_context()
-        self.ctx.check_hostname = False
-        self.ctx.verify_mode = ssl.CERT_NONE
+login_link = browser.find_element_by_xpath("//a[text()='Log in']")
+login_link.click()
 
-        self.gui = main_gui
+sleep(2)
 
-        """
-        with open('users.txt') as f:
-            self.content = f.readlines()
-        self.content = [x.strip() for x in self.content]
-        for url in self.content:
-            self.getinfo(url)
-        """
+username_input = browser.find_element_by_css_selector("input[name='username']")
+password_input = browser.find_element_by_css_selector("input[name='password']")
 
-    def getinfo(self, username):
-        try:
-            url = "https://www.instagram.com/" + username
+username_input.send_keys("kircitemel@gmail.com")
+password_input.send_keys("trabzon61")
 
-            html = urllib.request.urlopen(url, context=self.ctx).read()
-            soup = BeautifulSoup(html, 'html.parser')
-            data = soup.find_all('meta', attrs={'property': 'og:description'
-                                 })
-            text = data[0].get('content').split()
-            user = '%s %s %s' % (text[-3], text[-2], text[-1])
-            followers = text[0]
-            following = text[2]
-            posts = text[4]
+login_button = browser.find_element_by_xpath("//button[@type='submit']")
+login_button.click()
 
-            self.gui.user_label.setText(user)
-            self.gui.followers_label.setText(followers)
-            self.gui.following_label.setText(following)
-            self.gui.post_label.setText(posts)
+sleep(5)
 
-            print ('User:', user)
-            print ('Followers:', followers)
-            print ('Following:', following)
-            print ('Posts:', posts)
-            print ('---------------------------')
-        except:
-            self.gui.user_label.setText("####")
-            self.gui.followers_label.setText("####")
-            self.gui.following_label.setText("####")
-            self.gui.post_label.setText("####")
+browser.close()
